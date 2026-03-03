@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ur" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mini Mart - Beautiful and Modern Online Grocery Store">
+    <title>Mini Mart | Fresh Groceries Delivered</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-basket-shopping"></i>
+                Mini Mart
+            </a>
+            <nav class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+            </nav>
+            <div class="nav-icons">
+                <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="cart-icon" id="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-badge" id="cart-badge">0</span>
+                </div>
+                <div class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content animate-on-scroll fade-up">
+                <span class="hero-subtitle">100% Fresh & Organic</span>
+                <h1 class="hero-title">Bring the Best of <br>Nature to Your Next <span class="highlight">Meal</span></h1>
+                <p class="hero-desc">Discover a wide variety of fresh groceries, organic produce, and daily essentials delivered right to your doorstep with premium quality guaranteed.</p>
+                <div class="hero-search-box">
+                    <input type="text" placeholder="Search for groceries...">
+                    <button class="btn-primary"><i class="fa-solid fa-search"></i> Search</button>
+                </div>
+            </div>
+            <div class="hero-image-wrap animate-on-scroll zoom-in">
+                <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=1200" alt="Fresh Groceries" class="hero-img">
+                <div class="floating-card card-1">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <div>
+                        <h4>Fast Delivery</h4>
+                        <span>Within 2 hours</span>
+                    </div>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fa-solid fa-leaf"></i>
+                    <div>
+                        <h4>Fresh Quality</h4>
+                        <span>Daily picked</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories section-padding" id="categories">
+        <div class="section-header animate-on-scroll fade-up">
+            <span class="section-subtitle">Categories</span>
+            <h2 class="section-title">Explore Top <span class="highlight-text">Categories</span></h2>
+        </div>
+        <div class="categories-grid">
+            <!-- Categories will be injected via JS -->
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products section-padding" id="products">
+        <div class="section-header animate-on-scroll fade-up">
+            <span class="section-subtitle">Our Products</span>
+            <h2 class="section-title">Fresh & <span class="highlight-text">Featured</span></h2>
+        </div>
+        
+        <div class="filter-buttons animate-on-scroll fade-up">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="fruits">Fruits</button>
+            <button class="filter-btn" data-filter="vegetables">Vegetables</button>
+            <button class="filter-btn" data-filter="dairy">Dairy</button>
+            <button class="filter-btn" data-filter="bakery">Bakery</button>
+        </div>
+
+        <div class="products-grid" id="products-grid">
+            <!-- Products will be injected via JS -->
+        </div>
+    </section>
+
+    <!-- Banner Section -->
+    <section class="promo-banner animate-on-scroll zoom-in">
+        <div class="banner-content">
+            <h3>Get 20% Off on your first order!</h3>
+            <p>Use code: <strong>FRESH20</strong> at checkout</p>
+            <button class="btn-secondary">Shop Now</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="about">
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <a href="#" class="logo footer-logo">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    Mini Mart
+                </a>
+                <p>Providing the freshest groceries with seamless delivery experience to make your life easier and healthier.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Subscribe to get updates on daily offers.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Email Address">
+                    <button><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mini Mart. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="close-cart"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be injected here -->
+            <div class="empty-cart-msg">Your cart is empty.</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-price" id="cart-total-price">$0.00</span>
+            </div>
+            <button class="btn-primary w-100">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
